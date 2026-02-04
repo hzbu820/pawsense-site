@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PawSense AI - Pet Health Risk Alerts</title>
+    <meta
+      name="description"
+      content="PawSense AI continuously captures pet data via wearables and uses personalized baseline anomaly detection to flag fever, pain, and infection risks early."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="glow"></div>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">
+          <span class="logo">O</span>
+          <span class="brand-name">PawSense AI</span>
+        </div>
+        <nav class="links">
+          <a href="#overview">System</a>
+          <a href="#signals">Signals</a>
+          <a href="#routes">Paths</a>
+          <a href="#business">Business</a>
+          <a href="#pilot">Pilot</a>
+        </nav>
+        <a class="btn small ghost" href="#pilot">Book a Demo</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">AI + Wearables + Subscription</p>
+          <h1>The Pet Health Brain, spotting risks days early.</h1>
+          <p class="lead">
+            Continuously capture heart rate, respiration, temperature, activity, and sleep to build a
+            personalized baseline for each pet. Our AI detects state drift and alerts before symptoms
+            appear.
+          </p>
+          <div class="cta">
+            <a class="btn primary" href="#pilot">Join the Pilot</a>
+            <a class="btn ghost" href="#overview">See the Full System</a>
+          </div>
+          <div class="hero-meta">
+            <div>
+              <span class="meta-title">Core Value</span>
+              <p>Not a device. Peace of mind that avoids massive vet bills.</p>
+            </div>
+            <div>
+              <span class="meta-title">Technical Core</span>
+              <p>Personalized Baseline Anomaly Detection</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card reveal">
+          <div class="card">
+            <div class="card-header">
+              <span>Today's Health Radar</span>
+              <span class="status">Live</span>
+            </div>
+            <div class="risk-list">
+              <div class="risk">
+                <div class="risk-label">Infection Risk</div>
+                <div class="risk-bar"><span style="width: 72%"></span></div>
+                <div class="risk-value">72%</div>
+              </div>
+              <div class="risk">
+                <div class="risk-label">Pain Risk</div>
+                <div class="risk-bar"><span style="width: 41%"></span></div>
+                <div class="risk-value">41%</div>
+              </div>
+              <div class="risk">
+                <div class="risk-label">Fever Probability</div>
+                <div class="risk-bar"><span style="width: 58%"></span></div>
+                <div class="risk-value">58%</div>
+              </div>
+              <div class="risk">
+                <div class="risk-label">Cardiac Load</div>
+                <div class="risk-bar"><span style="width: 29%"></span></div>
+                <div class="risk-value">29%</div>
+              </div>
+            </div>
+            <div class="card-footer">
+              "27% more anomalous than the past 30 days. Observe or contact a vet."
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats container reveal">
+        <div class="stat">
+          <p class="stat-value">$150-$300</p>
+          <p class="stat-label">Typical vet visit cost (reference)</p>
+        </div>
+        <div class="stat">
+          <p class="stat-value">$1,500-$5,000</p>
+          <p class="stat-label">Hospitalization cost range (reference)</p>
+        </div>
+        <div class="stat">
+          <p class="stat-value">24-72h</p>
+          <p class="stat-label">Early warning window</p>
+        </div>
+      </section>
+
+      <section id="overview" class="section container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">System Structure</p>
+          <h2>Four layers that create a recurring subscription engine.</h2>
+        </div>
+        <div class="steps reveal">
+          <div class="step">
+            <span class="step-index">01</span>
+            <h3>Wearable Device</h3>
+            <p>Use existing collars or prototype hardware to capture key signals.</p>
+          </div>
+          <div class="step">
+            <span class="step-index">02</span>
+            <h3>Data Collection</h3>
+            <p>Continuous time series plus individual labels form each pet's profile.</p>
+          </div>
+          <div class="step">
+            <span class="step-index">03</span>
+            <h3>AI Health Analysis</h3>
+            <p>Compare against a 30-90 day baseline to compute risk scores.</p>
+          </div>
+          <div class="step">
+            <span class="step-index">04</span>
+            <h3>Owner Alerts</h3>
+            <p>Risk curves instead of diagnosis, enabling earlier action.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="signals" class="section container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Signals</p>
+          <h2>Continuous capture lets AI see trends, not single points.</h2>
+        </div>
+        <div class="grid reveal">
+          <div class="grid-card">
+            <h3>Heart Rate / PPG</h3>
+            <p>Detects inflammation, stress, and cardiac load trends.</p>
+          </div>
+          <div class="grid-card">
+            <h3>Respiration / Accelerometer</h3>
+            <p>Captures faster breathing and pain-related posture changes.</p>
+          </div>
+          <div class="grid-card">
+            <h3>Temperature</h3>
+            <p>Combined with multivariate patterns to predict fever risk.</p>
+          </div>
+          <div class="grid-card">
+            <h3>Activity / IMU</h3>
+            <p>Identifies activity drops, arthritis, and fatigue.</p>
+          </div>
+          <div class="grid-card">
+            <h3>Sleep / Behavior</h3>
+            <p>Fragmented sleep and abnormal behavior are early signals.</p>
+          </div>
+          <div class="grid-card">
+            <h3>Individual Baseline</h3>
+            <p>Every pet is its own universe, more reliable than population averages.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="routes" class="section container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Data Paths</p>
+          <h2>Three realistic paths to start fast from zero.</h2>
+        </div>
+        <div class="routes reveal">
+          <div class="route">
+            <span class="route-tag">Path A</span>
+            <h3>Open API Devices</h3>
+            <p>Integrate FitBark, Whistle, PetPace, and more via user-linked collars.</p>
+          </div>
+          <div class="route">
+            <span class="route-tag">Path B</span>
+            <h3>Buy Devices, Pull Data</h3>
+            <p>Purchase off-the-shelf devices and extract data via BLE or app logs.</p>
+          </div>
+          <div class="route">
+            <span class="route-tag">Path C</span>
+            <h3>Vet and Shelter Partnerships</h3>
+            <p>Provide free collars and reports in exchange for labeled datasets.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="mvp" class="section container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">MVP</p>
+          <h2>Small sample and long duration beat massive short data.</h2>
+        </div>
+        <div class="mvp reveal">
+          <div>
+            <h3>MVP Goal</h3>
+            <p>20-50 dogs over 60-90 days is enough to train early-warning models.</p>
+            <ul>
+              <li>Continuous time series plus vet or owner labels</li>
+              <li>Anomaly detection (LSTM / Transformer / AutoEncoder)</li>
+              <li>0-100% risk score outputs</li>
+            </ul>
+          </div>
+          <div class="mvp-card">
+            <div class="chip">Device Count</div>
+            <p class="mvp-value">20-50 units</p>
+            <div class="chip">Collection Window</div>
+            <p class="mvp-value">60-90 days</p>
+            <div class="chip">Core Outputs</div>
+            <p class="mvp-value">Fever / Pain / Infection risk</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="business" class="section container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Business Model</p>
+          <h2>Not hardware. Recurring risk alerts.</h2>
+        </div>
+        <div class="pricing reveal">
+          <div class="price-card">
+            <h3>Hardware Layer</h3>
+            <p class="price">$59-$149</p>
+            <p>Collar or harness sold once or provided by partners.</p>
+          </div>
+          <div class="price-card highlight">
+            <h3>AI Subscription</h3>
+            <p class="price">$15-$40 / month</p>
+            <p>Risk indices, trend reports, proactive alerts.</p>
+          </div>
+          <div class="price-card">
+            <h3>Ecosystem Upside</h3>
+            <p class="price">Optional</p>
+            <p>Insurance share, vet referrals, pharma partnerships.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Core Differentiation</p>
+          <h2>We build the Pet Health Brain.</h2>
+        </div>
+        <div class="compare reveal">
+          <div class="compare-row head">
+            <span>Existing Devices</span>
+            <span>PawSense AI</span>
+          </div>
+          <div class="compare-row">
+            <span>Population averages</span>
+            <span>Individual baseline</span>
+          </div>
+          <div class="compare-row">
+            <span>Today vs yesterday</span>
+            <span>Today vs last 90 days</span>
+          </div>
+          <div class="compare-row">
+            <span>Display data</span>
+            <span>Assess risk</span>
+          </div>
+          <div class="compare-row">
+            <span>Dashboard</span>
+            <span>Alert system</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="pilot" class="section container">
+        <div class="pilot reveal">
+          <div>
+            <p class="eyebrow">Pilot Program</p>
+            <h2>Looking for 20-50 bold early users.</h2>
+            <p>
+              We provide free collars and health reports in exchange for anonymized data.
+            </p>
+            <div class="cta">
+              <a class="btn primary" href="mailto:hello@pawsense.ai">Apply for Pilot</a>
+              <a class="btn ghost" href="#faq">Learn More</a>
+            </div>
+          </div>
+          <form class="pilot-form">
+            <label>
+              Name
+              <input type="text" placeholder="Your name" />
+            </label>
+            <label>
+              Contact
+              <input type="text" placeholder="Email / phone" />
+            </label>
+            <label>
+              Pet Info
+              <input type="text" placeholder="Breed / age / chronic issues" />
+            </label>
+            <button class="btn primary" type="button">Submit</button>
+            <p class="fine-print">No cost to submit. We'll respond within 48 hours.</p>
+          </form>
+        </div>
+      </section>
+
+      <section id="faq" class="section container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2>Quick answers to key questions.</h2>
+        </div>
+        <div class="faq-grid reveal">
+          <div class="faq-card">
+            <h3>Is this a medical diagnosis?</h3>
+            <p>No. We provide risk indices and trends. Final diagnosis is by a vet.</p>
+          </div>
+          <div class="faq-card">
+            <h3>Why not huge datasets?</h3>
+            <p>Longitudinal data from the same pet is more valuable than large short bursts.</p>
+          </div>
+          <div class="faq-card">
+            <h3>Is this live now?</h3>
+            <p>This is an MVP phase to validate data, models, and alert value.</p>
+          </div>
+          <div class="faq-card">
+            <h3>Can I join with my own device?</h3>
+            <p>Yes. We support open API devices or app data integration.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p class="brand-name">PawSense AI</p>
+          <p class="fine-print">We build AI that detects pet illness days before symptoms.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#overview">System</a>
+          <a href="#business">Business</a>
+          <a href="#pilot">Pilot</a>
+        </div>
+        <div class="fine-print">(c) 2026 PawSense AI. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
